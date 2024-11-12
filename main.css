@@ -1,0 +1,83 @@
+body {
+  background-color: #ccc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 50%;
+  margin: 20px auto;
+}
+.container .form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+.container .form #input {
+  display: inline-block;
+  width: 90%;
+  height: 40px;
+  padding: 20px;
+  border: none;
+  background-color: #f9f6f3;
+  outline: none;
+  font-size: 1.2rem;
+}
+.container .form .add {
+  display: inline-block;
+  padding: 20px;
+  height: 80px;
+  border: none;
+  background-color: #f23;
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.container .form .add:hover {
+  background-color: #f24;
+}
+.container .tasks {
+  width: 100%;
+  min-height: 300px;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+.container .tasks .task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  margin: 10px 0;
+  background-color: #ddd;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  color: #222;
+  text-transform: capitalize;
+}
+.container .tasks .task.done {
+  background-color: #607d8b;
+}
+.container .tasks .task span {
+  display: inline-block;
+  padding: 20px;
+  background-color: #f23;
+  color: white;
+  cursor: pointer;
+}
